@@ -5,5 +5,8 @@ CREATE TABLE quiz_attempts (
   id SERIAL PRIMARY KEY NOT NULL,
   quiz_id INTEGER REFERENCES quizzes(id) ON DELETE CASCADE,
   user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
-  submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  attempted_id INTEGER REFERENCES quiz_attempt_answers(id) ON DELETE CASCADE,
+  submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  total_questions TEXT,
+  
 );

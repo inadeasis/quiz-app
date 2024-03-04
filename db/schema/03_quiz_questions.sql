@@ -5,5 +5,6 @@ CREATE TABLE quiz_questions (
   id SERIAL PRIMARY KEY NOT NULL,
   quiz_id INTEGER REFERENCES quizzes(id) ON DELETE CASCADE,
   question TEXT NOT NULL,
-  correct_answer VARCHAR(1) NOT NULL
+  correct_answer VARCHAR(1) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
