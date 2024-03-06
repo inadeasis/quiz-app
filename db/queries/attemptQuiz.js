@@ -19,7 +19,6 @@ const attemptQuiz = (user_id, quiz_id, chosen_answer) => {
   return db
     .query(answerQueryString)
     .then(() => {
-      // Construct the INSERT query string for the attempt
       const attemptQueryString = `
         INSERT INTO quiz_attempts (quiz_id, user_id, submitted_at)
         VALUES ($1, $2, $3)
