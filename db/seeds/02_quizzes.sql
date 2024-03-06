@@ -26,7 +26,7 @@ VALUES (6, 'Math Quiz', 'Test your mathematical skills with these challenging qu
 
 -- Insert quiz 7
 INSERT INTO quizzes (creator_id, title, quiz_description, is_public, created_at)
-VALUES (7, 'Movie Quiz', 'Guess the movie from famous quotes and scenes.', true, NOW());
+VALUES (7, 'Movie Quiz', 'Guess the movie from famous quotes and scenes.', false, NOW());
 
 -- Insert quiz 8
 INSERT INTO quizzes (creator_id, title, quiz_description, is_public, created_at)
@@ -34,7 +34,7 @@ VALUES (8, 'Sports Quiz', 'Test your knowledge of sports teams, players, and eve
 
 -- Insert quiz 9
 INSERT INTO quizzes (creator_id, title, quiz_description, is_public, created_at)
-VALUES (9, 'Food Quiz', 'Identify dishes and cuisines from around the world.', true, NOW());
+VALUES (9, 'Food Quiz', 'Identify dishes and cuisines from around the world.', false, NOW());
 
 -- Insert quiz 10
 INSERT INTO quizzes (creator_id, title, quiz_description, is_public, created_at)
