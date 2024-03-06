@@ -39,3 +39,5 @@ const attemptQuiz = (user_id, quiz_id, chosen_answer) => {
       console.log(err.message)
     });
 };
+
+module.exports = {   attemptQuiz };

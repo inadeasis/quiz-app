@@ -1,5 +1,5 @@
 -- Seed for quiz_questions table
-INSERT INTO quiz_questions (quiz_id, question_text, correct_answer, created_at)
+INSERT INTO quiz_questions (quizzes_id, question_text, correct_answer, created_at)
 VALUES 
   (1, 'What is the capital of France?', 'Paris', NOW()),
   (1, 'What is the largest planet in our solar system?', 'Jupiter', NOW()),
