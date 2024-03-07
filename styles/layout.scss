@@ -9,10 +9,6 @@ html {
   text-align: center;
 }
 
-body {
-  background-color: #f7f9fd;
-}
-
 .container {
   width: 90vw;
   max-width: 62.5em;
@@ -148,6 +144,6 @@ input:focus {
   font-weight: 600;
 }
 
-// .hide {
-//   display: none;
-// }
+.hide {
+  display: none;
+}

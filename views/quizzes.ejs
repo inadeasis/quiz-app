@@ -51,7 +51,7 @@
 
       <form action="/quizzes" method="POST">
       <label for="title">Title:</label><br />
-      <input class="input" type="text" id="title" name="title" placeholder="Type title here" /><br />
+      <input class="input" type="text" id="title" name="title" placeholder="Type title here" required /><br />
 
       <label for="description">Description</label><br />
       <textarea
@@ -62,6 +62,7 @@
         value="Description"
         placeholder="Type description here"
         rows="2"
+        required
       ></textarea>
       <br />
 
@@ -74,6 +75,7 @@
         value="Question"
         rows="2"
         placeholder="Type the question here"
+        required
       ></textarea>
       <br /><br />
 
@@ -81,20 +83,30 @@
       <p>Type Answers Here:</p>
 
       <input type="radio" class="radio-btn" id="option-a" name="option" value="Option A">
-      <input class="input" type="text" name="title" placeholder="Type choice A here"/><br>
+      <input class="input" type="text" name="title" placeholder="Type choice A here" required/><br>
 
       <input type="radio" class="radio-btn" id="option-b" name="option" value="Option B">
-      <input class="input" type="text" name="title" placeholder="Type choice B here"/><br>
+      <input class="input" type="text" name="title" placeholder="Type choice B here" required/><br>
 
-      <input type="radio" class="radio-btn" id="option-c" name="option" value="Option C"><input class="input" type="text"  name="title" placeholder="Type choice C here"/><br>
+      <input type="radio" class="radio-btn" id="option-c" name="option" value="Option C"><input class="input" type="text"  name="title" placeholder="Type choice C here" required/><br>
 
       <input type="radio" class="radio-btn" id="option-d" name="option" value="Option D">
-      <input class="input" type="text" name="title" placeholder="Type choice D here"/><br>
+      <input class="input" type="text" name="title" placeholder="Type choice D here" required/><br>
 
       <button type="submit" class="create-btn btn-primary">Create</button>
       </form>
     </div>
 
-    <script src="/routes/quizzes.js" type="application/javascript"></script>
+    <script>
+    const container = document.querySelector(".container");
+    const createQuiz = document.getElementById("create-quiz");
+
+    const createQuizCard = document.getElementById("add-quiz");
+    const question = document.getElementById("question");
+
+    createQuiz.addEventListener("click", () => {
+      createQuizCard.classList.remove("hide")
+    })
+    </script>
   </body>
 </html>
