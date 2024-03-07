@@ -13,9 +13,7 @@ const createQuizCard = document.getElementById("add-quiz");
 const question = document.getElementById("question");
 
 createQuiz.addEventListener("click", () => {
-  container.classList.add("hide");
   createQuizCard.classList.remove("hide")
-
 })
 
 module.exports = router;
