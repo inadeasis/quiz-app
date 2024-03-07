@@ -10,3 +10,4 @@ CREATE TABLE quiz_attempts (
   total_questions INTEGER
 
 );
+--submitted_at vs created_at on schema vs seeds

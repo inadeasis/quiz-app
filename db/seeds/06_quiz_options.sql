@@ -1,6 +1,6 @@
 -- Seed for quiz_options table
 INSERT INTO quiz_options (question_id, option_text, is_correct)
-VALUES 
+VALUES
   (1, 'Paris', true),
   (1, 'Madrid', false),
   (1, 'Berlin', false),
@@ -41,3 +41,5 @@ VALUES
   (10, 'Isaac Newton', false),
   (10, 'Albert Einstein', false),
   (10, 'Galileo Galilei', false);
+
+--option_text does not match choices in schema

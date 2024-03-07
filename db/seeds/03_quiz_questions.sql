@@ -1,6 +1,6 @@
 -- Seed for quiz_questions table
 INSERT INTO quiz_questions (quizzes_id, question_text, correct_answer, created_at)
-VALUES 
+VALUES
   (1, 'What is the capital of France?', 'Paris', NOW()),
   (1, 'What is the largest planet in our solar system?', 'Jupiter', NOW()),
   (1, 'Who wrote "Romeo and Juliet"?', 'William Shakespeare', NOW()),
@@ -11,4 +11,5 @@ VALUES
   (2, 'Which planet is known as the Red Planet?', 'Mars', NOW()),
   (2, 'What is the square root of 16?', '4', NOW()),
   (2, 'Who is known as the "Father of Computer Science"?', 'Alan Turing', NOW());
-    
+
+-- question_text does not match question in schema
