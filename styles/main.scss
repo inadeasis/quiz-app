@@ -64,6 +64,14 @@ body {
   object-position: center bottom;
 }
 
+.image-container #illu {
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  object-position: center;
+}
+
 .icons {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -141,4 +149,6 @@ h2.text {
   padding-right: 25%;
 }
 
-
+#login-container {
+  border-left: 2px solid black;
+}
