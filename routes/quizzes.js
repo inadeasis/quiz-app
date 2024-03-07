@@ -7,9 +7,10 @@ router.get('/', (req, res) => {
 
 
 const container = document.querySelector(".container");
+const createQuiz = document.getElementById("create-quiz");
+
 const createQuizCard = document.getElementById("add-quiz");
 const question = document.getElementById("question");
-const createQuiz = document.getElementById("create-quiz");
 
 createQuiz.addEventListener("click", () => {
   container.classList.add("hide");
