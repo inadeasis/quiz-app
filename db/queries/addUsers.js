@@ -6,7 +6,7 @@ const addUser = function (user) {
     values: [user.username, user.email, user.user_password]
   };
 
-  return pool
+  return db
   .query(query)
   .then((result) => {
     return result.rows[0]; // Return the first row (the newly inserted user)
