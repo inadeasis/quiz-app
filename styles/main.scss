@@ -59,36 +59,55 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: flex;
+  align-items: center;
+  object-position: center bottom;
 }
 
-.logo {
-  margin-top: 20px;
+.icons {
+  margin-top: 10px;
   margin-bottom: 20px;
-  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.icons #favicon {
+  height: 55px;
+}
+
+.icons #logo {
+  height: 100px;
 }
 
 .register-text {
-  margin-top: 20px;
   text-align: center;
   width: 100%;
 }
 
+h2.text {
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
 .register-form {
   margin-top: 20px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   font-size: 13px;
+  width: 50%;
+}
+
+.register-form button{
+  margin-top:30px;
 }
 
 .text {
-  width: 80%;
-  margin: 0 auto;
   text-align: center;
   word-wrap: break-word;
 }
 
 #page-text {
-  padding-top: 10px;
-  font-size: 12px;
+  padding-top: 15px;
+  font-size: 1em;
   color:rgb(131, 130, 136);
 }
 
@@ -97,10 +116,29 @@ body {
   border: 0.7px solid rgb(188, 187, 187);
   margin-bottom: 10px;
   box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.bottom-text {
+.register-form button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(214, 34, 34);
+  border: none;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: 'Bungee';
+}
+
+.register-form .bottom-text {
   font-size: 12px;
-  color:rgb(131, 130, 136);
-
+  color:rgb(21, 21, 21);
+  padding-left: 25%;
+  padding-right: 25%;
 }
+
+

@@ -8,3 +8,5 @@ CREATE TABLE quiz_questions (
   correct_answer VARCHAR(1) NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- question does not match question-text in seeds

@@ -7,3 +7,5 @@ CREATE TABLE quiz_options (
   choices TEXT NOT NULL,
   is_correct BOOLEAN NOT NULL
 );
+
+--choices does not match option_text in seeds

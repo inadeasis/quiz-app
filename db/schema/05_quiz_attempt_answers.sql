@@ -6,3 +6,5 @@ CREATE TABLE quiz_attempt_answers (
   question_id INTEGER REFERENCES quiz_questions(id) ON DELETE CASCADE,
   chosen_answer VARCHAR(1) NOT NULL
 );
+
+--chosen_answer does not match chosen_id in seeds
