@@ -7,6 +7,6 @@ CREATE TABLE quiz_attempts (
   user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
   attempted_id INTEGER REFERENCES quiz_attempt_answers(id) ON DELETE CASCADE,
   submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  total_questions TEXT,
-  
+  total_questions INTEGER
+
 );
