@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Public Quizzes</title>
+  <meta charset="UTF-8">
+  <title>Public Quizzes</title>
 </head>
 <body>
-    <h1>Public Quizzes</h1>
-    <% quizzes.forEach(quiz => { %>
-        <div>
-            <h2><%= quiz.title %></h2>
-            <p><%= quiz.quiz_description %></p>
-        </div>
-    <% }); %>
+  <h1>Public Quizzes</h1>
+  <ul>
+  <% quizzes.forEach(quiz => { %>
+      <div>
+          <a href="/quizzes"><%= quiz.title %></a>
+          <p><%= quiz.quiz_description %></p>
+      </div>
+  <% }); %>
+  </ul>
 </body>
 </html>
 
