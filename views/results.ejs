@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Register</title>
+    <title>Results</title>
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/vendor/border-box.css" />
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/results.css" />
+
 
     <script src="/vendor/jquery-3.0.0.js"></script>
     <script defer src="/scripts/results.js"></script>
@@ -23,10 +25,26 @@
   </head>
 
   <body class="container">
-    <div class="results">
-      <button>Retake Quiz</button>
-      <button>Share Results </button>
+    <div class="results-cont">
+      <div>Insert Result Here</div>
+      <button id="retake">Retake Quiz</button>
+      <button id="share">Share Results </button>
     </div>
     </div>
+
+    <script>
+      const container = document.querySelector(".container");
+      const retakeQuiz = document.getElementById("retake");
+      const shareQuiz = document.getElementById("share");
+
+      retakeQuiz.addEventListener("click", () => {
+        location.href = "https://google.com";
+      });
+
+      shareQuiz.addEventListener("click", () => {
+        location.href = "results";
+      });
+
+    </script>
   </body>
 </html>
