@@ -1,5 +1,5 @@
 -- Seed for quiz_attempts table
-INSERT INTO quiz_attempts (user_id, quiz_id, attempted_id, total_questions, created_at)
+INSERT INTO quiz_attempts (user_id, quiz_id, attempted_id, total_questions, submitted_at)
 VALUES
   (1, 1, 4, 5, NOW()), -- User 1 attempts Quiz 1 and scores 4 out of 5
   (2, 1, 3, 5, NOW()), -- User 2 attempts Quiz 1 and scores 3 out of 5
@@ -8,3 +8,4 @@ VALUES
   (2, 2, 4, 5, NOW()); -- User 2 attempts Quiz 2 and scores 4 out of 5
 
 --created_at not matching submitted_at in schema
+--changed created_at to submitted_at to match schema
