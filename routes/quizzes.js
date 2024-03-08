@@ -1,9 +1,18 @@
 const express = require('express');
 const router  = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/quizzes', (req, res) => {
   res.render('quizzes');
 });
+// router.get('/quizzes', (req, res) => {
+//   if (req.session.userId) {
+//       // User is logged in, render quizzes page
+//       res.render('quizzes');
+//   } else {
+//       // User is not logged in, redirect to login page
+//       res.redirect('/login');
+//   }
+// });
 
 // const container = document.querySelector(".container");
 // const createQuiz = document.getElementById("create-quiz");

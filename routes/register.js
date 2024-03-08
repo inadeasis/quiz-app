@@ -1,14 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
-const cookieSession  = require('cookie-session')
 const { addUser } = require('../db/queries/addUsers');
-
-router.use(cookieSession ({
-  name: 'session',
-  keys: ['key1', 'key2'],
-  maxAge: 24 * 60 * 60 * 1000, // 24 hours
-}));
 
 router.get('/', (req, res) => {
   res.render('register');
@@ -27,7 +20,6 @@ router.post('/', (req, res) => {
 
    addUser(user)
      .then(user => {
-      req.session.userId = user.id;
       res.redirect('/login');
      })
      .catch(err => {
