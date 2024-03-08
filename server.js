@@ -34,7 +34,7 @@ const usersRoutes = require('./routes/users');
 const quizzesRoutes = require('./routes/quizzes');
 const loginRoutes = require('./routes/login');
 const registerRoutes = require('./routes/register');
-const resultRoutes = require('./routes/result');
+const resultRoutes = require('./routes/results');
 
 // Mount all resource routes
 // Note: Feel free to replace the example routes below with your own
