@@ -7,4 +7,5 @@ CREATE TABLE quiz_attempt_answers (
   chosen_answer VARCHAR(1) NOT NULL
 );
 
---chosen_answer does not match chosen_id in seeds
+--chosen_answer does not match chosen_option in seeds
+
