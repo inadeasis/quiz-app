@@ -19,7 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:wght@300;600&display=swap" rel="stylesheet" />
 
     <script src="/vendor/jquery-3.0.0.js"></script>
-    <script defer src="/routes/"></script>
+    <script defer src="/scripts/quizzes.js"></script>
+
+    <!-- <script defer src="/routes/"></script> -->
+
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/c28a04e72f.js"
@@ -96,34 +99,5 @@
       <button type="submit" class="create-btn btn-primary">Create</button>
       </form>
     </div>
-
-    <script>
-
-    const createQuiz = document.getElementById("create-quiz");
-    const createQuizCard = document.getElementById("add-quiz");
-
-    // Shows the Create Quiz when Button is Clicked
-    createQuiz.addEventListener("click", () => {
-      createQuizCard.classList.remove("hide")
-    })
-
-    // Submit Form
-    const form = document.getElementById("quiz-form")
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault()
-
-      const title = document.getElementById("title").value
-      const description = document.getElementById("description").value
-      const question = document.getElementById("question").value
-      const optionA = document.getElementById("option-a").value
-      const optionB = document.getElementById("option-b").value
-      const optionC = document.getElementById("option-c").value
-      const optionD = document.getElementById("option-d").value
-
-      console.log(title, description, question, optionA, optionB, optionC, optionD)
-
-    })
-    </script>
   </body>
 </html>
