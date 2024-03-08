@@ -5,15 +5,14 @@ router.get('/', (req, res) => {
   res.render('quizzes');
 });
 
+// const container = document.querySelector(".container");
+// const createQuiz = document.getElementById("create-quiz");
 
-const container = document.querySelector(".container");
-const createQuiz = document.getElementById("create-quiz");
+// const createQuizCard = document.getElementById("add-quiz");
+// const question = document.getElementById("question");
 
-const createQuizCard = document.getElementById("add-quiz");
-const question = document.getElementById("question");
-
-createQuiz.addEventListener("click", () => {
-  createQuizCard.classList.remove("hide")
-})
+// createQuiz.addEventListener("click", () => {
+//   createQuizCard.classList.remove("hide")
+// })
 
 module.exports = router;
