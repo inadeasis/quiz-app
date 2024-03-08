@@ -9,8 +9,10 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+
   res.redirect('/login');
   const { username, email, password } = req.body;
+
 
   bcrypt.hash(password, saltRounds, (err, hash) => {
     if (err) {
