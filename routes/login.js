@@ -1,8 +1,15 @@
 const express = require('express');
+
 const router  = express.Router();
 const bcrypt = require('bcryptjs');
 const { findUser } = require('../db/queries/findUser')
 
+
+router.use(cookieSession ({
+  name: 'session',
+  keys: ['key1', 'key2'],
+  maxAge: 24 * 60 * 60 * 1000, // 24 hours
+}));
 router.get('/', (req, res) => {
   res.render('login');
 });
