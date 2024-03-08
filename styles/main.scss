@@ -129,3 +129,140 @@ h2.text {
   padding-left: 25%;
   padding-right: 25%;
 }
+
+.background {
+  font-family: 'Nunito', sans-serif;
+  background: #ffff;
+  color: #222;
+  text-align: left;
+}
+
+.background .container {
+  margin: auto;
+  border: 4px solid rgb(195, 164, 164);
+}
+
+.split {
+  display: flex;
+  height: 100vh;
+}
+
+.left-container,
+.image-container {
+  flex: 1;
+  display: flex;
+}
+
+.left-container {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  width: 50%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  object-position: center bottom;
+}
+
+.image-container #illu {
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  object-position: center;
+}
+
+.icons {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.icons #favicon {
+  height: 55px;
+}
+
+.icons #logo {
+  height: 100px;
+}
+
+.register-text {
+  text-align: center;
+  width: 100%;
+}
+
+h2.text {
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.register-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  width: 50%;
+}
+
+.register-form button {
+  margin-top: 30px;
+}
+
+.text {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#page-text {
+  padding-top: 15px;
+  font-size: 1em;
+  color: rgb(131, 130, 136);
+}
+
+.register-form input {
+  width: 100%;
+  border: 0.7px solid rgb(188, 187, 187);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.register-form button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(214, 34, 34);
+  border: none;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: 'Bungee';
+}
+
+.register-form .bottom-text {
+  font-size: 12px;
+  color: rgb(21, 21, 21);
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+#login-container {
+  border-left: 2px solid black;
+}

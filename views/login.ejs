@@ -25,28 +25,33 @@
   <body class="background">
     <div class="split">
       <div class="left-container">
-        <div class="logo">
-          <img src="/favicon.png" alt="Quizz app favicon" />
-          <img src="/logo.png" alt="Quizz app logo" />
+        <div class="icons">
+          <img src="/favicon.png" id="favicon" alt="Quizz app favicon" />
+          <img src="/logo.png" id="logo" alt="Quizz app logo" />
         </div>
         <div class="register-text">
-          <h2 class="text">Login</h2>
+          <h2 class="text">Create an account</h2>
           <div class="text" id="page-text">
-            Don't have an account? Register here
+            An easy way to make and share quizzes
           </div>
         </div>
         <div class="register-form">
           <form method="POST" action="/register">
+            <label for="name">Name</label><br />
+            <input type="name" id="name" name="name" /><br />
             <label for="email">Email</label><br />
             <input type="email" id="email" name="email" /><br />
             <label for="password">Password</label><br />
             <input type="password" id="password" name="password" /><br />
-            <button type="submit">Log in</button><br />
+            <button type="submit">Register</button><br />
+            <label for="bottom-text" class="bottom-text"
+              >Already have an account? Login</label
+            >
           </form>
         </div>
       </div>
       <div class="image-container">
-        <img src="/illu2.jpg" alt="illustration" />
+        <img src="/classroom.jpeg" alt="Classroom setting" />
       </div>
     </div>
   </body>
