@@ -8,7 +8,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  res.redirect('/quizzes');
 
   const username = req.body.username;
   const password = req.body.password;
