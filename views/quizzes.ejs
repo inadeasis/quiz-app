@@ -49,7 +49,7 @@
       <i class="fa-solid fa-xmark"></i>
       </div>
 
-      <form action="/quizzes" method="POST">
+      <form action="/quizzes" method="POST" id="quiz-form">
       <label for="title">Title:</label><br />
       <input class="input" type="text" id="title" name="title" placeholder="Type title here" required /><br />
 
@@ -82,30 +82,47 @@
       <!-- Q&A Input Form -->
       <p>Type Answers Here:</p>
 
-      <input type="radio" class="radio-btn" id="option-a" name="option" value="Option A">
-      <input class="input" type="text" name="title" placeholder="Type choice A here" required/><br>
+      <input type="radio" class="radio-btn"  name="option" value="Option A">
+      <input class="input" id="option-a" type="text" name="title" placeholder="Type choice A here" required/><br>
 
-      <input type="radio" class="radio-btn" id="option-b" name="option" value="Option B">
-      <input class="input" type="text" name="title" placeholder="Type choice B here" required/><br>
+      <input type="radio" class="radio-btn"  name="option" value="Option B">
+      <input class="input" id="option-b" type="text" name="title" placeholder="Type choice B here" required/><br>
 
-      <input type="radio" class="radio-btn" id="option-c" name="option" value="Option C"><input class="input" type="text"  name="title" placeholder="Type choice C here" required/><br>
+      <input type="radio" class="radio-btn" name="option" value="Option C"><input class="input"  id="option-c" type="text"  name="title" placeholder="Type choice C here" required/><br>
 
-      <input type="radio" class="radio-btn" id="option-d" name="option" value="Option D">
-      <input class="input" type="text" name="title" placeholder="Type choice D here" required/><br>
+      <input type="radio" class="radio-btn"  name="option" value="Option D">
+      <input class="input" id="option-d" type="text" name="title" placeholder="Type choice D here" required/><br>
 
       <button type="submit" class="create-btn btn-primary">Create</button>
       </form>
     </div>
 
     <script>
-    const container = document.querySelector(".container");
+
     const createQuiz = document.getElementById("create-quiz");
-
     const createQuizCard = document.getElementById("add-quiz");
-    const question = document.getElementById("question");
 
+    // Shows the Create Quiz when Button is Clicked
     createQuiz.addEventListener("click", () => {
       createQuizCard.classList.remove("hide")
+    })
+
+    // Submit Form
+    const form = document.getElementById("quiz-form")
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault()
+
+      const title = document.getElementById("title").value
+      const description = document.getElementById("description").value
+      const question = document.getElementById("question").value
+      const optionA = document.getElementById("option-a").value
+      const optionB = document.getElementById("option-b").value
+      const optionC = document.getElementById("option-c").value
+      const optionD = document.getElementById("option-d").value
+
+      console.log(title, description, question, optionA, optionB, optionC, optionD)
+
     })
     </script>
   </body>
