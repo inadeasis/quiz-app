@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attempt Details</title>
+</head>
+<body>
+    <h1>Quiz Attempt Details</h1>
+    <% if (attempt) { %>
+        <div>
+            <p>Attempt ID: <%= attempt.attempted_id %></p>
+            <p>Chosen Answer: <%= attempt.chosen_answer %></p>
+        </div>
+    <% } else { %>
+        <p>No attempt found.</p>
+    <% } %>
+</body>
+</html>
+
+
+
