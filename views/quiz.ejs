@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title><%= quiz.title %></title>
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+
+    <script src="/vendor/jquery-3.0.0.js"></script>
+    <script defer src="/scripts/users.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1><%= quiz.title %></h1>
-    <p><%= quiz.quiz_description %></p>
-    <% if (quiz.questions && quiz.questions.length > 0) { %>
-        <ol>
-            <% quiz.questions.forEach(question => { %>
-                <li>
-                    <%= question.question %>
-                    <ul>
-                        <% question.options.forEach(option => { %>
-                            <li>
-                                <%= option.choices %>
-                            </li>
-                        <% }) %>
-                    </ul>
-                </li>
-            <% }) %>
-        </ol>
-    <% } else { %>
-        <p>No questions found for this quiz.</p>
-    <% } %>
+    <form action="/submit-quiz" method="POST">
+      <% quiz.questions.forEach((question, index) => { %>
+        <div class="question-block">
+          <h2><%= index + 1 %>. <%= question.question %></h2>
+          <% question.options.forEach(option => { %>
+            <div class="option">
+              <input type="radio" id="option<%= question.id %>-<%= option.id %>" name="answer<%= question.id %>" value="<%= option.id %>" required>
+              <label for="option<%= question.id %>-<%= option.id %>"><%= option.choices %></label>
+            </div>
+          <% }) %>
+        </div>
+      <% }) %>
+        <button type="submit">Submit Quiz</button>
+    </form>
 </body>
 </html>
 

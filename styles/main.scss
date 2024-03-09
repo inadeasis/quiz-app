@@ -265,3 +265,34 @@ h2.text {
 #login-container {
   border-left: 2px solid black;
 }
+
+
+.question-block {
+  text-align: center; /* Center the question block content */
+}
+
+.option {
+  width: 15%; /* Adjust the width as needed */
+  margin: 0 2%; /* Spacing between options */
+  display: inline-block; /* Align the elements inline */
+}
+
+/* Clearfix for .question-block in case it's needed */
+.question-block:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Adjust label styles as needed */
+.option label {
+  display: block;
+  text-align: center; /* Center the text in the label */
+}
+
+/* Ensure the form submit button is centered */
+form > button {
+  display: block;
+  margin: 20px auto; /* Adds margin on the top and bottom, auto centers horizontally */
+}
+

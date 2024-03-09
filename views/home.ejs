@@ -7,7 +7,7 @@
   <ul>
   <% quizzes.forEach(quiz => { %>
       <div>
-        <a href="/quiz/<%= quiz.id %>"><%= quiz.title %></a>
+        <a href="/quiz-info/<%= quiz.id %>"><%= quiz.title %></a>
           <p><%= quiz.quiz_description %></p>
       </div>
   <% }); %>

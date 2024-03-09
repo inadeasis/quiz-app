@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
       bcrypt.compare(password, user.user_password)
         .then(isValidPass => {
           if (isValidPass) {
-            res.redirect('/quizzes');
+            res.redirect('/home');
           } else {
             return res.status(500).send('Invalid password')
           }
