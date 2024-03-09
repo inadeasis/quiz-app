@@ -284,15 +284,36 @@ h2.text {
   clear: both;
 }
 
-/* Adjust label styles as needed */
 .option label {
   display: block;
-  text-align: center; /* Center the text in the label */
+  text-align: center;
 }
 
-/* Ensure the form submit button is centered */
 form > button {
   display: block;
-  margin: 20px auto; /* Adds margin on the top and bottom, auto centers horizontally */
+  margin: 20px auto;
+}
+
+.quiz-info {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  max-width: 300px;
+  border: solid rgb(200, 83, 83) 2px;
+  background-color: solid rgb(0, 95, 29);
+}
+
+.submit-button {
+  display: inline-block;
+  background-color: #587ef4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; 
 }
 
