@@ -38,7 +38,7 @@ const registerRoutes = require('./routes/register');
 const homeRoutes = require('./routes/home');
 const quizRoutes = require('./routes/quiz');
 const quizInfoRoutes = require('./routes/quiz-info');
-
+const submitQuiz = require('./routes/submit-quiz');
 
 
 // const resultRoutes = require('./routes/results');
@@ -57,7 +57,7 @@ app.use('/register', registerRoutes);
 app.use('/home', homeRoutes);
 app.use('/quiz', quizRoutes);
 app.use('/quiz-info', quizInfoRoutes);
-
+app.use('/submit-quiz', submitQuiz);
 
 
 // app.use('/results',resultRoutes);

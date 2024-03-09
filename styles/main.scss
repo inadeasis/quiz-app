@@ -303,3 +303,17 @@ form > button {
   background-color: solid rgb(0, 95, 29);
 }
 
+.submit-button {
+  display: inline-block;
+  background-color: #587ef4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; 
+}
+
