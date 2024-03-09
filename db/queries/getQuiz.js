@@ -50,7 +50,7 @@ const getQuiz = (id) => {
         question.options.push({
           id: row.option_id,
           choices: row.choices,
-          // is_correct: row.is_correct
+          is_correct: row.is_correct
         });
       });
 
